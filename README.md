@@ -1,2 +1,2 @@
 # Estudos
-Repositório criado para mostrar problemas resolvidos em momento de estudo de programação.
+Repositório criado para mostrar problemas resolvidos por em momento de estudo da linguagem de programação Python.
