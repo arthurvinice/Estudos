@@ -1,3 +1,5 @@
+#Este jogo solicita um número inteiro de 1 a 10 ao usuário e executa o laço até o usuário acertar o número.
+
 import random
 
 def guess(x):
