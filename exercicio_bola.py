@@ -7,7 +7,8 @@ class Bola:
         self.cor = cor
         self.circunferencia = circunferencia
         self.material = material
-        
+    
+    #Função para trocar a cor da bola
     def trocaCor(self):
         troca = input(f'Deseja trocar a cor? S/N')
         
@@ -16,7 +17,7 @@ class Bola:
             self.cor = nova
         else:
             print(f'Cor não alterada.')
-            
+    #Função que mostra a cor da bola
     def mostraCor(self):
         print(f'A cor é {self.cor}')
 
