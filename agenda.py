@@ -30,26 +30,30 @@ while True:
         opcao = int(input("Digite 1 para criar contato\nDigite 2 para listar os contatos\nDigite 3 para criar uma nova agenda em branco\nDigite 4 para sair. \n>> "))
     except ValueError:
         print('Tipo de dado não válido.')
-    except TypeError:
-        print('Tipo de dado não válido.')
+   
+    
+    try:    
+        if opcao == 1:
+            adc_contato()
         
-    if opcao == 1:
-        adc_contato()
-    
-    elif opcao == 2:
-        listar_contatos()
+        elif opcao == 2:
+            listar_contatos()
 
-    elif opcao == 3:
-        print("\nContatos apagados, agenda resetada..\n")
-        print("Criando nova agenda...\n")
-        reiniciar_agenda()
+        elif opcao == 3:
+            print("\nContatos apagados, agenda resetada..\n")
+            print("Criando nova agenda...\n")
+            reiniciar_agenda()
 
-    elif opcao == 4:
-        print("Fechando agenda...")
-        break
+        elif opcao == 4:
+            print("Fechando agenda...")
+            break
+        
+        else:
+            print("valor inválido.")
     
-    else:
-        print("valor inválido.")
+    except NameError:
+        print('Tipo de dado não válido.')
+
 
 
 
