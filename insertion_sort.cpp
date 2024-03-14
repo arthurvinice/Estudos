@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+//INSERTION SORT
+int main() {
+    int lista[] = {3,2,5,4};
+    int tamanho_lista = 4;
+    
+    for(int i = 0; i < tamanho_lista; i++){
+        int menor_indice = i; //indice do menor elemento 
+        for(int j = i; j < tamanho_lista; j++){
+            if (lista[j] < lista[menor_indice]) {
+                menor_indice = j;
+                }
+        }
+        if(menor_indice != i){
+            int temp = lista[i];
+            lista[i] = lista[menor_indice];
+            lista[menor_indice] = temp;
+        }
+    }
+    cout << lista[0] << " " << endl;
+    return 0;
+}
