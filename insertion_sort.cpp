@@ -10,15 +10,16 @@ int main() {
         int menor_indice = i; //indice do menor elemento 
         for(int j = i; j < tamanho_lista; j++){
             if (lista[j] < lista[menor_indice]) {
-                menor_indice = j;
+                menor_indice = j; //atualizando o indice
                 }
         }
-        if(menor_indice != i){
+        if(menor_indice != i){ // condição para trocar valores
             int temp = lista[i];
             lista[i] = lista[menor_indice];
             lista[menor_indice] = temp;
         }
     }
+    //exibição da lista completa
     for (int i = 0; i < tamanho_lista; i++) {
         cout << lista[i] << " ";
     }
