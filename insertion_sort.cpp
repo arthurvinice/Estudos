@@ -19,6 +19,9 @@ int main() {
             lista[menor_indice] = temp;
         }
     }
-    cout << lista[0] << " " << endl;
+    for (int i = 0; i < tamanho_lista; i++) {
+        cout << lista[i] << " ";
+    }
+    cout << endl;
     return 0;
 }
