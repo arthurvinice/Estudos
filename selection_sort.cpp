@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//INSERTION SORT
+//SELECTION SORT
 int main() {
     int lista[] = {3,2,5,4};
     int tamanho_lista = 4;
