@@ -13,7 +13,7 @@
 function CodelandUsernameValidation(str) {
     const validate = true;
     if (str.length > 4 && str.length < 25) {
-        if (/^[0-9]/.test(str.charAt(0))){
+        if (/^[a-zA-Z0-9]/.test(str.charAt(0))){
             if (/^[a-zA-Z0-9_]+$/.test(str) && str.charAt(str.length-1) !== '_'){
                 return validate;
             }
